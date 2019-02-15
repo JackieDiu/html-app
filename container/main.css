@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+blockquote {
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 0.8em 1.2em;
+}
+
+.logo {
+  width: 130px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 25px;
+  margin-top: 45%;
+}
+
+.server {
+  width: 70%;
+  margin: 2em auto 2em 25%; /*2em from the top, auto from the left, 2em on the bottom and 25% from the left*/
+}
+
+h1,
+.subhead {
+  position: relative; /* */
+  z-index: 3; /*keeps the position of this section at a level 3 */
+}
+
+.subhead {
+  font-size: 1.1em;
+}
+
+.blue-container {
+  width: 100%;
+  background: #00c2ff;
+  color: white;
+  margin-top: 15%;
+  padding: 4em 0 2em;
+  border-top-left-radius: 40px;
+  transform: skewY(-2deg);
+}
+
+.blue-container:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #00c2ff;
+  position: absolute;
+  top: -39px;
+  right: 0;
+  z-index: -2;
+}
+
+.blue-container:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-color: purple;
+  position: absolute;
+  right: 0;
+}
+
+.blue-container ul {
+  transform: skewY(2deg);
+}
